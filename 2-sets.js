@@ -110,3 +110,30 @@ setB.add("a");
 setB.add("d");
 
 console.log(setA.subset(setB));
+
+console.log(setA.intersection(setB).values());
+
+/*
+    _______________________________________________________________________________________________________________
+    _______________________________________________________________________________________________________________
+
+    Below is the build in set
+
+*/
+
+let setC = new Set();
+let setD = new Set();
+
+setC.add("a");
+setD.add("b");
+setD.add("c");
+setD.add("a");
+setD.add("d");
+
+console.log(setD.values());
+// instead of returning an array like the defined set structure above, this returns an iterator, that we can iterate through
+
+setD.delete("a");
+console.log(setD.has("a")); //  returns false
+
+console.log(setD.add("d"));
