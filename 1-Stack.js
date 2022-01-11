@@ -67,7 +67,7 @@ var Stack = function () {
       return undefined;
     }
 
-    this.count --;
+    this.count--;
 
     var result = this.storage[this.count];
     delete this.storage[this.count];
